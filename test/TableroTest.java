@@ -46,4 +46,14 @@ public class TableroTest {
         assertFalse(ganador);
     }
 
+    /*
+        TODO: Realizar Prueba Unitaria para Metodo buscarGanadorPorColumna
+        Valor 1 pto
+     */
+
+    /*
+        TODO: Realizar Prueba Unitaria para Metodo buscarGanadorPorDiagonal
+        Valor 1 pto
+     */
+
 }

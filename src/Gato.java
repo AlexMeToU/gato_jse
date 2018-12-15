@@ -31,6 +31,10 @@ public class Gato {
         } while (opc != 0);
     }
 
+    /*
+        TODO: Implementar metodo mostrarMenu
+        valor: 1 pto.
+     */
     public static void mostrarMenu() {
         System.out.println(menu);
     }
@@ -68,23 +72,11 @@ public class Gato {
         return finJuego;
     }
 
+    /*
+        TODO: Implementar metodo hayGanador
+        valor: 3 pto.
+     */
     public static boolean hayGanador(int[][] tablero, int jugador) {
-        String mensaje = "¡¡¡¡¡¡¡¡¡¡ Felicidades Jugador %s has ganado !!!!!! \n";
-
-        if (Tablero.buscarGanadorPorColumna(tablero, jugador)) {
-            System.out.printf(mensaje, jugador);
-            return true;
-        }
-
-        if (Tablero.buscarGanadorPorFila(tablero, jugador)) {
-            System.out.printf(mensaje, jugador);
-            return true;
-        }
-
-        if (Tablero.buscarGanadorPorDiagonal(tablero, jugador)) {
-            System.out.printf(mensaje, jugador);
-            return true;
-        }
 
         return false;
     }

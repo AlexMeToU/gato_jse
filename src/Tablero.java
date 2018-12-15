@@ -1,11 +1,11 @@
 public class Tablero {
 
+    /*
+        TODO: Implementar metodo limpiarTablero
+        valor: 2pto
+     */
     public static int[][] limpiarTablero(int[][] tablero) {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                tablero[i][j] = 0;
-            }
-        }
+
         return tablero;
     }
 
@@ -36,12 +36,12 @@ public class Tablero {
         }
     }
 
+    /*
+        TODO: Implementar metodo validarCol
+        valor: 1 pto.
+     */
     public static boolean validarCol(int col) {
-        if (col >= 0 && col < 3) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
 
     public static boolean validarTiro(int[][] tablero, int fila, int col) {
@@ -53,10 +53,12 @@ public class Tablero {
         }
     }
 
+    /*
+        TODO: Implementar metodo dibujarTablero
+        valor: 2 pto.
+     */
     public static void dibujarTablero(int[][] tablero) {
-        for (int i = 0; i < 3; i++) {
-            System.out.printf(" %s | %s | %s \n", tablero[i][0], tablero[i][1], tablero[i][2]);
-        }
+
     }
 
     public static boolean buscarGanadorPorFila(int [][] tablero, int jugador){
@@ -68,22 +70,21 @@ public class Tablero {
         return false;
     }
 
+    /*
+        TODO: Implementar metodo buscarGanadorPorColumna
+        valor: 1 pto.
+     */
     public static boolean buscarGanadorPorColumna(int [][] tablero, int jugador){
-        for (int j = 0; j < 3; j ++){
-            if (tablero[0][j] == jugador && tablero[1][j] == jugador && tablero[2][j] == jugador){
-                return true;
-            }
-        }
+
         return false;
     }
 
+    /*
+        TODO: Implentar metodo buscarGanadorPorDiagonal
+        valor: 2 pto.
+     */
     public static boolean buscarGanadorPorDiagonal(int [][] tablero, int jugador){
-        if (tablero[0][0] == jugador && tablero[1][1] == jugador && tablero[2][2] == jugador) {
-            return true;
-        } else if (tablero[2][0] == jugador && tablero[1][1] == jugador && tablero[0][2] == jugador){
-            return true;
-        } else {
-            return false;
-        }
+
+        return false;
     }
 }

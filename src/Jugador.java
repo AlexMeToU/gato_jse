@@ -38,20 +38,12 @@ public class Jugador {
         return fila;
     }
 
+    /*
+    TODO: Implementar el metodo seleccionarCol
+    Valor: 1 pto
+     */
     public static int seleccionarCol(Scanner sc) {
-        boolean isColValida;
-        int col;
-
-        do {
-            System.out.println(mensajeCol);
-            col = sc.nextInt();
-            isColValida = Tablero.validarCol(col);
-            if (!isColValida) {
-                System.out.println("ALERTA: \"COLUMNA INVALIDA\"");
-            }
-        } while (!isColValida);
-
-        return col;
+        return -1;
     }
 
 }
